@@ -3,8 +3,13 @@ This is a desktop multi platform App minimal template. Next.js (https://nextjs.o
 
 ## Getting Started
 
-- Click "Use this template" button and create repository with template
-- import the project template in an editor e.g. VSCode and synchronize the project with git-hub
+- Clone the project template:
+```
+git clone https://github.com/salvatoresalerno/electron-nextjs-template.git
+# change the directory name to the project name
+cd project_name_dir
+```
+- import the project template in an editor, e.g. VSCode, create git repository and synchronize the project with git-hub
 - change value of "name" props in package.json
 - install dependencies:
 ```
