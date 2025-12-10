@@ -1,20 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a desktop multi platform App minimal template. Next.js (https://nextjs.org) project inside a Electron (https://www.electronjs.org/) project. 
+
 
 ## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Click "Use this template" button and create repository with template
+- import the project template in an editor e.g. VSCode and synchronize the project with git-hub
+- change value of "name" props in package.json
+- install dependencies:
+```
+npm install
+```
+- run project:
+```
+npm run dev 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The desktop app Electron start with Next.js project inside with hot-reload activated. 
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
@@ -27,10 +28,7 @@ To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To learn more about Electron, take a look at the following resources:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Electron official site](https://www.electronjs.org) - official website
+- [Electron Documentation](https://www.electronjs.org/docs/latest/) - learn about Electron for build cross-platform desktop apps with JavaScript, HTML, and CSS
