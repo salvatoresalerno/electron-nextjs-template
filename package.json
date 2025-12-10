@@ -1,9 +1,14 @@
 {
-  "name": "ricette-lab",
+  "name": "electro-next",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
+  "main": "electron/main.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"npm run dev:start\" \"npm run dev:electron\"", 
+    "dev:start": "next dev",
+    "dev:electron": "npm run bundle-preload && wait-on http://localhost:3000 && cross-env NODE_ENV=development electron --trace-warnings .",
+    "bundle-preload": "esbuild electron/preload.ts --bundle --outfile=electron/preload.bundle.js --platform=node --external:electron --external:fs --external:path",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
@@ -18,9 +23,14 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
+    "electron": "^39.2.6",
+    "esbuild": "^0.27.1",
     "eslint": "^9",
     "eslint-config-next": "16.0.8",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wait-on": "^9.0.3"
   }
 }
